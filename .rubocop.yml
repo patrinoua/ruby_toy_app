@@ -1,0 +1,190 @@
+AllCops:
+  Exclude:
+    - tmp/**/*
+    - vendor/**/*
+    - bin/**/*
+    - terraform/**/*
+    - db/**/*
+    - gems/**/*
+  NewCops: disable
+  SuggestExtensions: false
+
+inherit_from: .rubocop_todo.yml
+require: rubocop-rspec
+
+RSpec:
+  Enabled: false
+
+RSpec/Focus:
+  AutoCorrect: false
+  Enabled: true
+
+RSpec/FilePath:
+  Enabled: true
+  SpecSuffixOnly: true
+
+Style/TrivialAccessors:
+  AllowPredicates: true
+
+Layout/ParameterAlignment:
+  EnforcedStyle: with_fixed_indentation
+
+Layout/EndAlignment:
+  EnforcedStyleAlignWith: start_of_line
+
+Style/FrozenStringLiteralComment:
+  Enabled: false
+
+Style/MutableConstant:
+  Enabled: false
+
+Style/EachWithObject:
+  Enabled: false
+
+Style/StringLiterals:
+  Enabled: false
+
+Bundler/OrderedGems:
+  Enabled: false
+
+Lint/UnifiedInteger:
+  Enabled: false
+
+Style/NumericLiterals:
+  Enabled: false
+
+Style/NestedModifier:
+  Enabled: false
+
+Style/PreferredHashMethods:
+  Enabled: false
+
+Style/FormatStringToken:
+  Enabled: false
+
+Metrics/ClassLength:
+  Enabled: false
+
+Layout/EmptyLinesAroundAttributeAccessor: # (0.83)
+  Enabled: false
+
+Layout/SpaceAroundMethodCallOperator: # (0.82)
+  Enabled: false
+
+Lint/BinaryOperatorWithIdenticalOperands: # (0.89)
+  Enabled: false
+
+Lint/DeprecatedOpenSSLConstant: # (0.84)
+  Enabled: false
+
+Lint/DuplicateElsifCondition: # (0.88)
+  Enabled: false
+
+Lint/DuplicateRescueException: # (0.89)
+  Enabled: false
+
+Lint/EmptyConditionalBody: # (0.89)
+  Enabled: false
+
+Lint/FloatComparison: # (0.89)
+  Enabled: false
+
+Lint/MissingSuper: # (0.89)
+  Enabled: false
+
+Lint/MixedRegexpCaptureTypes: # (0.85)
+  Enabled: false
+
+Lint/OutOfRangeRegexpRef: # (0.89)
+  Enabled: false
+
+Lint/RaiseException: # (0.81)
+  Enabled: false
+
+Lint/SelfAssignment: # (0.89)
+  Enabled: false
+
+Lint/StructNewOverride: # (0.81)
+  Enabled: false
+
+Lint/TopLevelReturnWithArgument: # (0.89)
+  Enabled: false
+
+Lint/UnreachableLoop: # (0.89)
+  Enabled: false
+
+Style/AccessorGrouping: # (0.87)
+  Enabled: false
+
+Style/ArrayCoercion: # (0.88)
+  Enabled: false
+
+Style/AsciiComments:
+  Enabled: false
+
+Style/BisectedAttrAccessor: # (0.87)
+  Enabled: false
+
+Style/CaseLikeIf: # (0.88)
+  Enabled: false
+
+Style/ExplicitBlockArgument: # (0.89)
+  Enabled: false
+
+Style/ExponentialNotation: # (0.82)
+  Enabled: false
+
+Style/GlobalStdStream: # (0.89)
+  Enabled: false
+
+Style/HashAsLastArrayItem: # (0.88)
+  Enabled: false
+
+Style/HashEachMethods: # (0.80)
+  Enabled: false
+
+Style/HashLikeCase: # (0.88)
+  Enabled: false
+
+Style/HashTransformKeys: # (0.80)
+  Enabled: false
+
+Style/HashTransformValues: # (0.80)
+  Enabled: false
+
+Style/OptionalBooleanParameter: # (0.89)
+  Enabled: false
+
+Style/RedundantAssignment: # (0.87)
+  Enabled: false
+
+Style/RedundantFetchBlock: # (0.86)
+  Enabled: false
+
+Style/RedundantFileExtensionInRequire: # (0.88)
+  Enabled: false
+
+Style/RedundantRegexpCharacterClass: # (0.85)
+  Enabled: false
+
+Style/RedundantRegexpEscape: # (0.85)
+  Enabled: false
+
+Style/SingleArgumentDig: # (0.89)
+  Enabled: false
+
+Style/SlicingWithRange: # (0.83)
+  Enabled: false
+
+Style/StringConcatenation: # (0.89)
+  Enabled: false
+
+Style/SymbolProc:
+  IgnoredMethods:
+    - after_create
+
+Metrics/PerceivedComplexity:
+  Enabled: false
+
+Metrics/MethodLength:
+  Enabled: false
